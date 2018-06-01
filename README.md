@@ -1,5 +1,9 @@
 # Griffin Group Global full stack Development Challenge
-
+The web application runs on three servers:
+1) Client Side Server: https://localhost:8080
+2) Web Services Server: https://localhost:8081
+3) Microservices Server: https://localhost:8082
+4) Database.sql- This file consists of the database created for the web application
 # CLIENT SIDE FOLDER
 
 This folder basically consists of a views folder, an index.js file, cert.pem and key.pem.
@@ -100,7 +104,7 @@ If you are successful, then we will set up an in-person interview and use this c
 # The Challenge
 Griffin Group Global employs several technologies to create a microservice based architecture. We are currently using
 [Nodejs][nodejs] on the backend in our [docker][docker] based microservices. Our UX currently targets the IOS platform
-but as we expand we will move to android based UXs and responsive web applications. 
+but as we expand we will move to android based UXs and responsive web applications.
 
 Our challenge is to create a web based UI that allows a web UI user to communicate with a non web UI user. The web ui should
 allow the web user to Create and Read individual contacts where the contact name and method of communication are stored.
@@ -113,7 +117,7 @@ We would like a minimum  capability. These are:
 - A RESTful create and read mechanism for contacts
 - A RESTful create and read mechanism for conversations.
 - Contacts and Conversation shall be their own independent services (microservice).
-- a Web UI that allows a user to send messages in a conversation to contact, using the contacts preferred communication 
+- a Web UI that allows a user to send messages in a conversation to contact, using the contacts preferred communication
 method.
 
 The basic format for the RESTful route would conform to:
@@ -156,7 +160,7 @@ In a microservices application, there are many areas that need to be developed. 
 
 Please do not overthink think this or get too wrapped up in making a bullet proof application. This is a  
 comprehensive full stack challenge as specified by the minimum requirements. Spending significant amounts of time ensuring production
-level robustness is not required. Rather, we would like to see your architectural choices and approach to coding over 
+level robustness is not required. Rather, we would like to see your architectural choices and approach to coding over
 production ready, visually appealing features.
 
 # Prerequisites
