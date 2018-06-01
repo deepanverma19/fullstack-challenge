@@ -237,7 +237,7 @@ function getNewToken(oAuth2Client, callback) {
 
 //This function is used to get the List of all messages whether sent, drafted or received
 function listMessages(auth)	{
-	var gmail = google.gmail({version: 'v1', auth});
+  var gmail = google.gmail({version: 'v1', auth});
 	gmail.users.messages.list({
 		userId: 'me',
 	}, (err, {data}) => {
@@ -251,16 +251,17 @@ function listMessages(auth)	{
 
 //This function is used to get only appropriate received message and is called above in listMessages function
 function getMessage(auth, messageId){
-	var gmail = google.gmail({version: 'v1', auth});
+  var gmail = google.gmail({version: 'v1', auth});
 	gmail.users.messages.get({
 		userId: 'me',
 		id: messageId
 	}, (err, {data}) => {
 		if(err) return console.log('The API returned an error: ' + err);
 		var message = data;
-		var inbox = "IMPORTANT,CATEGORY_PERSONAL,INBOX"
-		if(`${message.labelIds}` === inbox){
+		var inbox = "UNREAD,IMPORTANT,CATEGORY_PERSONAL,INBOX"
+    if(`${message.labelIds}` === inbox){
 			var receivedtext = `${message.snippet}`;
+      console.log(receivedtext);
       var subject = `${message.payload.headers[22].value}`;
       var person = `${message.payload.headers[19].value}`;
       var persondetails = person.split(" ");
