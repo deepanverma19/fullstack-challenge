@@ -1,5 +1,96 @@
 # Griffin Group Global full stack Development Challenge
 
+# CLIENT SIDE FOLDER
+
+This folder basically consists of a views folder, an index.js file, cert.pem and key.pem.
+
+cert.pem and key.pem
+--------------------
+These two files are the self-signed certificate and keys being generated using OpenSSL.
+ https://localhost:8080/
+ https: denotes that the website is secured using self-signed certificate
+
+ index.js
+ --------
+ This file is used to create first Server that runs on port no 8080 and contains all the client side code.
+
+ views FOLDER
+ ------------
+This folder consists of various html pages:
+
+1) contacts.html - html page used to redirect to Contacts page
+2) contactsuccessfullycreated.html - Confirmation page for contact creation and existing contacts viewable by clicking on it
+3) conversations.html - Clicking on any row of existing contacts opens up conversations.html to fill the subject and message to be sent
+4) conversationssuccessfullycreated.html -Confirmation page for contact creation and existing conversations including sent and received messages(once the server starts new recieved messages can be seen) viewable by clicking on it
+5) createcontact.html- Filling the details to create a new contact page
+6) createconversation.html- Filling the details to create a new conversation.
+7) error.html- 404 error page
+8) existingcontacts.html - To view the existingcontacts in the database
+9) existingconversations.html- To view the existing conversations in the database
+10) index.html - Homepage
+
+css FOLDER
+----------
+The .css files used for developing appealing UX.
+
+img FOLDER
+----------
+The various images used.
+
+js FOLDER
+---------
+The various js files used for doing specific operations as listed:
+1) createContact.js - js file used for doing manipulations in the table and calling createContact webservice
+2) createConversation.js - js file used for doing manipulations in the table and calling createConversation webservice
+3) viewExistingContacts.js - js file used for viewing existing contacts calling createContact webservice
+4) viewExistingConversations.js - js file used for viewing existing conversations calling createConversation webservice
+
+# WEB SERVICES FOLDER
+
+This folder basically consists of an webservices.js file, cert.pem and key.pem.
+
+cert.pem and key.pem
+--------------------
+These two files are the self-signed certificate and keys being generated using OpenSSL.
+ https://localhost:8081/
+ https: denotes that the website is secured using self-signed certificate
+
+ This ensures that the web servies are secured.
+
+ webservices.js
+ --------------
+
+ This .js file consists of four various web services requests i.e. :
+1)'/getExistingContacts'- GET Existing Contacts web service
+2)'/createContact'- POST i.e. Create new Contacts web service
+3)'/createConversation'- POST i.e. Create new Conversation web service
+4)'/getExistingConversations'- GET Existing Conversations web service
+
+These webservices further make calls to microservices.
+
+# MICROSERVICES FOLDER
+
+This folder basically consists of an microservices.js file, cert.pem and key.pem.
+
+cert.pem and key.pem
+--------------------
+These two files are the self-signed certificate and keys being generated using OpenSSL.
+ https://localhost:8082/
+ https: denotes that the website is secured using self-signed certificate
+
+ This ensures that the microservies are secured.
+
+ microservices.js
+ --------------
+
+ This .js file consists of four various microservices requests i.e. :
+1)'/getExistingContacts-microservices'- GET Existing Contacts microservice
+2)'/createContact-microservices'- POST i.e. Create new Contacts microservice
+3)'/createConversation-microservices''- POST i.e. Create new Conversation microservice
+4)'/getExistingConversations-microservices'- GET Existing Conversations microservice
+
+These microservices further make calls to the database i.e. MySQL database and do caching as required.
+
 Hi! Thank you for your interest in [Griffin Group Global][g3website]. Our evaluation processes begins with an open-ended coding challenge that we will discuss during your interview. There is not one correct way to approach this challenge. Rather, we would like to see your approach and your creativity in solving the problem.
 
 We appreciate that any coding challenge represents an investment of your time. We hope you see the value in having a code sample that is relatable to both of us for the interview. Should you be unsuccessful, you should feel free to use the code you developed for this challenge in any way that you would like.

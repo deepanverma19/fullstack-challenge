@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="dverma">
+
+    <title>Griffin Global Group - Full Stack Developer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Navigates to the main repository where the code is saved right now -->
+		<a class="navbar-brand" href="https://www.github.com/deepanverma19">Griffin Global Group - Full Stack Developer Challenge My Code</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contacts.html">Contacts<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4" style="color:red"><b>Welcome to the Create Conversations Page<br></b>
+	  <img class="card-img-top" height="250px" src="img/gmail-icon.jpg" alt="">
+	  <h5 style="color:blue"><i>
+	  On this webpage, you can easily create a new conversation.
+	  </i></h5>
+      </h1>
+	  <form action="conversationsuccessfullycreated.html">
+		First name:<br>
+		<input type="text" id="first_name" name="firstname">
+		<br>
+		Last name:<br>
+		<input type="text" id="last_name" name="lastname">
+		<br>
+		Email ID:<br>
+		<input type="email" id="email_id" name="email">
+		<br>
+		Conversation Topic:<br>
+    <input type="text" id="topics" name="conversationtopic">
+		<!-- <select id="topics">
+			<option value="music">Music</option>
+			<option value="hollywood">Hollywood</option>
+			<option value="science">Science</option>
+			<option value="philosophy">Philosophy</option>
+			<option value="politics">Politics</option>
+		</select> -->
+		<br>
+		Enter the text that you want to send as an email regarding the topic<br>
+		<textarea id="message_content" rows="4" cols="50">
+		</textarea><br>
+		<input type="button" id="send_email" value="Send Email"></input>
+	  </form>
+	</div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; My Web Application for GGG-FSD</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/createConversation.js"></script>
+
+  </body>
+
+</html>
