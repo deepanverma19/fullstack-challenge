@@ -4,9 +4,8 @@
   "description": "Package.json for microservices",
   "main": "microservices.js",
   "scripts": {
-	"start": "nodemon webservices.js",
-	"test": "echo \"Error: no test specified\" && exit 1"
-  },
+	  "start": "nodemon microservices.js"
+	},
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
@@ -21,9 +20,6 @@
     "unirest": "^0.5.1"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Deepan Verma",
   "license": "ISC"
 }
