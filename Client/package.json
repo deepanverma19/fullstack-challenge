@@ -4,7 +4,7 @@
   "description": "Package.json for client",
   "main": "index.js",
   "scripts": {
-	   "start": "nodemon index.js"
+    "start": "nodemon index.js"
 	},
   "dependencies": {
     "body-parser": "^1.18.2",
